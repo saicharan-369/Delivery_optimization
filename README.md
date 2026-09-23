@@ -12,19 +12,19 @@ A small Python command-line simulator for assigning packages to delivery agents 
 Run the simulator with an input JSON file:
 
 ```powershell
-python updated.py data.json
+python Delivery_System.py data.json
 ```
 
 By default, results are written to `report.json`. Use `-o` or `--output` to select another destination:
 
 ```powershell
-python updated.py test_case_2.json --output results.json
+python Delivery_System.py test_case_2.json --output results.json
 ```
 
 When no input file is provided, the program prompts for a path and uses `data.json` when the response is empty:
 
 ```powershell
-python updated.py
+python Delivery_System.py
 ```
 
 The completed report is printed to the terminal and saved as formatted JSON.
@@ -89,7 +89,7 @@ The report contains one entry for each agent:
 
 ## Included Files
 
-- `updated.py`: simulator and command-line entry point.
+- `Delivery_System.py`: simulator and command-line entry point.
 - `data.json`: sample input.
 - `test_case_1.json` through `test_case_10.json`: additional input cases.
 - `report.json`: sample generated output.
